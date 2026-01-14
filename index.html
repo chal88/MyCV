@@ -4,90 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chalice Fourie - Personal CV</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      font-family: 'Roboto', Arial, sans-serif;
       line-height: 1.6;
+      color: #333;
     }
     .header {
       text-align: center;
-      padding: 2rem 0;
-      background-color: #007bff;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
       color: white;
     }
     .profile-img {
-      max-width: 150px;
+      max-width: 160px;
       border-radius: 50%;
+      border: 4px solid white;
       margin: 1rem 0;
     }
-    .section {
+    .card {
       margin: 2rem auto;
-      padding: 1.5rem;
-      background-color: white;
-      border-radius: 10px;
+      padding: 2rem;
       max-width: 900px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      background-color: white;
     }
     h2 {
       color: #007bff;
       margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #00c6ff;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+    footer a:hover {
+      color: #00c6ff;
+    }
+    .skills-icon {
+      margin-right: 8px;
+      color: #007bff;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header Section -->
   <div class="header">
+    <img src="profile.jpg" alt="Chalice Fourie" class="profile-img img-fluid">
     <h1>Chalice Fourie</h1>
-    <p>Web Developer | Designer | Problem Solver</p>
-    <img src="profile.jpg" alt="Chalice Fourie" class="profile-img">
+    <p class="lead">Web Developer | Designer | Problem Solver</p>
   </div>
 
-  <div class="section">
+  <!-- About Me Section -->
+  <div class="card">
     <h2>About Me</h2>
-    <p>Hello! I’m Chalice Fourie, a hard working and determined person, always finding new skills to learn and grow in, currently studying a course in software engineering with experience in creating dynamic websites and applications. I love combining creativity and technology to build user-friendly solutions.</p>
+    <p>Hello! I’m Chalice Fourie, a hard-working and determined person, always finding new skills to learn and grow in, currently studying a course in software engineering with experience in creating dynamic websites and applications. I love combining creativity and technology to build user-friendly solutions.</p>
     <p>My experience ranges from developing online shops to personal portfolio websites. I enjoy problem-solving and continuously learning new technologies.</p>
     <p>My goal is to grow as a developer while contributing to innovative projects that make a difference.</p>
   </div>
 
-  <div class="section">
+  <!-- Contact Details -->
+  <div class="card">
     <h2>Contact Details</h2>
-    <ul>
-      <li>Email: chalicefourie88@gmail.com</li>
-      <li>Phone: +27 083 497 5225 </li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/chalice-fourie" target="_blank">linkedin.com/in/chalice-fourie</a></li>
-      <li>GitHub: <a href="https://github.com/chal88" target="_blank">github.com/chal88</a></li>
+    <ul class="list-unstyled">
+      <li><i class="bi bi-envelope-fill skills-icon"></i>Email: <a href="mailto:chalicefourie88@gmail.com">chalicefourie88@gmail.com</a></li>
+      <li><i class="bi bi-telephone-fill skills-icon"></i>Phone: +27 083 497 5225</li>
+      <li><i class="bi bi-linkedin skills-icon"></i>LinkedIn: <a href="https://www.linkedin.com/in/chalice-fourie" target="_blank">linkedin.com/in/chalice-fourie</a></li>
+      <li><i class="bi bi-github skills-icon"></i>GitHub: <a href="https://github.com/chal88" target="_blank">github.com/chal88</a></li>
     </ul>
   </div>
 
-  <div class="section">
+  <!-- Skills & Competencies -->
+  <div class="card">
     <h2>Skills & Competencies</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li><i class="bi bi-check-circle-fill skills-icon"></i>Administrative work</li>
+          <li><i class="bi bi-check-circle-fill skills-icon"></i>HTML, CSS, JavaScript</li>
+          <li><i class="bi bi-check-circle-fill skills-icon"></i>Python & Django</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><i class="bi bi-check-circle-fill skills-icon"></i>Bootstrap & Responsive Design</li>
+          <li><i class="bi bi-check-circle-fill skills-icon"></i>Git, GitHub, Deployment</li>
+          <li><i class="bi bi-check-circle-fill skills-icon"></i>Problem-solving & teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="card">
+    <h2>Education</h2>
+    <p>Completed an International diploma in Body Therapy & Skincare, and CIDESCO International Diploma</p>
+    <p>Currently studying a course for software engineering</p>
+  </div>
+
+  <!-- Work Experience -->
+  <div class="card">
+    <h2>Work Experience</h2>
     <ul>
-      <li>Administrative work</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python & Django</li>
-      <li>Bootstrap & Responsive Design</li>
-      <li>Git, GitHub, Deployment</li>
-      <li>Problem-solving & teamwork</li>
+      <li>Body Therapy & Skincare – Bushveld Retreat Lodge (2007-2008)</li>
+      <li>Body Therapy & Skincare – Spa Betesda (2008)</li>
+      <li>Body Therapy & Skincare – La Montagne Day Spa & Beauty Clinic (2009-2010)</li>
+      <li>Administrative work - Vaalwater Pale (2011-2018)</li>
+      <li>Administrative work - Vaalwater Pale & Fourie Transport (2019-2026)</li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p> Completed an International diploma in Body Therapy & Skincare, and CIDESCO International Diploma
-    <p>Currentl studying a course for software engineering </p>
-  </div>
-
-  <div class="section">
-    <h2>Work Experience</h2>
-    <p>Body Therapy & Skincare – Bushveld Retreat Lodge (2007-2008)</p>
-    <p>Body Therapy & Skincare – Spa Betesda (2008)</p>
-    <p>Body Therapy & Skincare – La Montagne Day Spa & Beauty Clinic (2009-2010)</p>
-    <p>Administrative work - Vaalwater Pale (2011-2018)</p>
-    <p>Administrative work - Vaalwater Pale & Fourie Transport (2019-2026)</p>  
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/chalice-fourie" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/chal88" target="_blank"><i class="bi bi-github"></i></a>
+    <br><br>
+    <a href="Chalice_Fourie_CV.pdf" class="btn btn-warning btn-sm" download>Download CV</a>
+    <p class="mt-2 mb-0">&copy; 2026 Chalice Fourie</p>
+  </footer>
 
 </body>
 </html>
